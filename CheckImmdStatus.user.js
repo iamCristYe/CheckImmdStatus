@@ -14,12 +14,13 @@
     //open https://www.gov.hk/en/apps/immdextensionstayenquiry.htm
     //or   https://www.gov.hk/tc/apps/immdextensionstayenquiry.htm
 
-    Application_reference_number_part1 = "";
-    Application_reference_number_part2 = "";
-    Application_reference_number_part3 = "";
-    Birthday_day = "";
-    Birthday_month = "";
-    Birthday_year = "";
+    //fill in the blanks here
+    let Application_reference_number_part1 = "";
+    let Application_reference_number_part2 = "";
+    let Application_reference_number_part3 = "";
+    let Birthday_day = "";
+    let Birthday_month = "";
+    let Birthday_year = "";
 
     if (document.getElementsByClassName("formBox")[3] != undefined) {
         if (document.getElementsByClassName("formBox")[3].innerText.indexOf("You may proceed with the online service without these functions") != -1 || document.getElementsByClassName("formBox")[3].innerText.indexOf("可選擇繼續使用本項服務") != -1) {
