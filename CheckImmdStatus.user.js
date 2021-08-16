@@ -22,22 +22,13 @@
     let Birthday_month = "";
     let Birthday_year = "";
 
-    if (document.getElementsByClassName("formBox")[3] != undefined) {
-        if (document.getElementsByClassName("formBox")[3].innerText.indexOf("You may proceed with the online service without these functions") != -1 || document.getElementsByClassName("formBox")[3].innerText.indexOf("使用本") != -1) {
-            document.getElementsByClassName("buttonExit")[0].click();
-        }
+    if (document.getElementsByTagName("app-application-status-enquiry-requirements")[0].innerText.indexOf("You may use this service to enquire the application status") != -1 || document.getElementsByTagName("app-application-status-enquiry-requirements")[0].innerText.indexOf("使用此") != -1) {
+        document.getElementsByTagName("button")[3].click();
     }
 
-    if (document.getElementsByClassName("formBoxWithPadding")[0] != undefined) {
-        if (document.getElementsByClassName("formBoxWithPadding")[0].innerText.indexOf("You may use this service to enquire the application status") != -1 || document.getElementsByClassName("formBoxWithPadding")[0].innerText.indexOf("使用此") != -1) {
-            document.getElementsByClassName("buttondefault")[0].click();
-        }
-    }
-
-    if (document.getElementsByClassName("noborder")[0] != undefined) {
-        document.getElementsByClassName("noborder")[0].checked = true;
-        document.getElementsByClassName("buttondefault")[0].click();
-
+    if (document.getElementsByTagName("app-application-status-enquiry-common-container")[0].innerText.indexOf("的目的") != -1) {
+        document.getElementsByTagName("input")[0].click();
+        document.getElementsByTagName("button")[3].click();
     }
 
     if (document.getElementsByTagName("td")[3] != undefined) {
